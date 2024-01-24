@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
+
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 
@@ -13,7 +14,6 @@
       integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <div class="sidebar">
       <nav class="sidebar_navigation">
@@ -29,55 +30,84 @@
             <img src="./assets/icons/logo-spotify.png" alt="logo do spotfiy" />
           </a>
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="">
-                <span class="fa fa-home"></span>
-                <span>Início</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="fa fa-search"></span>
-                <span>Buscar</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <a href="">
+              <span class="fa fa-home"></span>
+              <span>Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="fa fa-search"></span>
+              <span>Buscar</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-      <div class="sidebar_biblioteca">
-        <div class="sidebar_b">
-          <div class="biblioteca_link">
-            <a href=""><i class="fas fa-book"></i>Sua biblioteca</a>
-            <a href=""><i class="fa fa-plus"></i></a>
-          </div>
-          <div class="playlist">
-            <span class="sidebar_span">Crie sua primeira playlist</span>
-            <p class="sidebar_p">É fácil, vamos te ajudar.</p>
-            <button class="sidebar_btn">Criar playlist</button>
-          </div>
-          <div class="podcast">
-            <span class="sidebar_pod">Que tal seguir um podcast novo?</span>
-            <p class="sidebar_aviso">Avisaremos você sobre novos episódios.</p>
-            <button class="sidebar_btn2">Explore podcasts</button>
-          </div>
-          <div class="cookies">
-            <button class="cookies_btn">Legal</button>
-            <button class="cookies_btn">Centro de Privacidade</button>
-            <button class="cookies_btn">Política de privacidade</button>
-            <button class="cookies_btn">Cookies</button>
-            <button class="cookies_btn">Sobre Anúncios</button>
-            <button class="cookies_btn">Acessibilidade</button>
-            <button class="cookies_btn">Notice at Collection</button>
-            <button class="cookies_btn">Your Privacy Choices</button>
-            <p class="sidebar_cookies">Cookies</p>
-            <button class="sidebar_idioma">
-              <i class="fa fa-globe"></i>Português do Brasil
+      <div class="library">
+        <div class="library__content">
+          <button class="library__button">
+            <span class="fa fas fa-book"></span>
+            <span>Sua Biblioteca</span>
+          </button>
+          <span class="fa fa-plus"></span>
+        </div>
+        <section class="section-playlist">
+          <div class="section-playlist__content">
+            <span class="text title">Crie sua primeira playlist</span>
+            <span class="text subtitle">É fácil, vamos te ajudar.</span>
+            <button class="section-playlist__button">
+              <span>Criar playlist</span>
             </button>
           </div>
+        </section>
+        <section class="section-podcast">
+          <div class="section-podcast__content">
+            <span class="text title">Que tal seguir um podcast novo?</span>
+            <span class="text subtitle"
+              >Avisaremos você sobre novos episódios.</span
+            >
+            <button class="section-podcast__button">
+              <span>Explore podcasts</span>
+            </button>
+          </div>
+        </section>
+        <div class="cookies">
+          <button class="cookies_btn">Legal</button>
+          <button class="cookies_btn">Centro de Privacidade</button>
+          <button class="cookies_btn">Política de privacidade</button>
+          <button class="cookies_btn">Cookies</button>
+          <button class="cookies_btn">Sobre Anúncios</button>
+          <button class="cookies_btn">Acessibilidade</button>
+          <button class="cookies_btn">Notice at Collection</button>
+          <button class="cookies_btn">Your Privacy Choices</button>
+          <p class="sidebar_cookies">Cookies</p>
+          <button class="sidebar_idioma">
+            <i class="fa fa-globe"></i>Português do Brasil
+          </button>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <ul>
+          <li>
+            <span class="footer title">TESTAR O PREMIUM DE GRAÇA</span>
+          </li>
+          <li>
+            <span class="footer subtitle"
+              >Inscreva-se para curtir música ilimitada e podcasts só com alguns
+              anúncios. Não precisa de cartão de crédito</span
+            >
+          </li>
+        </ul>
+        <div class="foooter__button">
+          <button class="footer__button">
+            <span>Inscreva-se grátis</span>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
