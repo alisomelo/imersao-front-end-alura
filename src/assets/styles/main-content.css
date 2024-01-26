@@ -1,10 +1,24 @@
 /* HEADER */
 
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar{
+    width: 12px; /* espessura do scrollbar  */
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 107px);
     max-width: 100%;
-    height: 100vh;
     margin-left: 324px; 
     margin-right: 12px;
 }
@@ -72,16 +86,12 @@
     width: 16px;
     height: 16px;
     margin-left: 10px;
-    filter: grayscale(1);
-    filter: grayscale(0);
-    filter: hue-rotate(215deg);
 }
 
 .header__search input{
     background: transparent;
     border: none;
     padding: 0px 100px 0 12px;
-    height: 100%;
     color: var(--text-dark);
     text-overflow: ellipsis;
     overflow: hidden;
@@ -113,14 +123,21 @@
     border: transparent;
 }
 
+.header__login .login:hover{
+    transform: scale(1.04);
+}
+
+/* FIM HEADER */
+
 .main-content{
     display: flex;
     flex-direction: column;
-    margin: 105px 0 0 0;
     justify-content: space-between;
+    position: fixed;
+    margin: 105px 0 0 0;
     background-image: linear-gradient(to bottom left, #005B14, #003900);
     height:calc(100vh - 212px);
-    width: 100%;
+    width: calc(100vw - 336px);
     border-radius: 8px;
 }
 
@@ -129,7 +146,7 @@
     flex-direction: column;
 }
 
-.main1{
+.main-content .greeting {
     display: flex;
     margin: 30px;
     font-weight: 800;
@@ -137,10 +154,166 @@
     color: var(--text-light);
 }
 
-.main2{
+.texto{
     display: flex;
     margin: 0 30px;
     font-weight: 300;
     font-size: 22;
     color: var(--text-light);
+}
+
+
+
+/* CARDS */
+.main-content .cards{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    position: relative;
+    margin-bottom: 18px;
+    margin-left: 30px;
+    margin-top: 12px;
+    gap: 20px;
+}
+
+#cards-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+    background-color: #003900;
+    padding: 20px 18px 40px 12px;
+    border-radius: 8px;
+    color: var(--text-light);
+    font-family: var(--font-dm-sans);
+    gap: 8px;
+}
+
+.main-content .cards .cardtxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.cards #cards-container :hover{
+    background-color: #005B14;
+}
+
+.main-content .cards .card1 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card2 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card3 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card4 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card5 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card6 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card7 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card8 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card9 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card10 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card11 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card12 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card13 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card14 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.main-content .cards .card15 img {
+    width: 20vh;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-artist{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+    background-color: #003900;
+    padding: 20px 18px 40px 12px;
+    margin-bottom: 18px;
+    margin-left: 30px;
+    margin-top: 12px;
+    border-radius: 8px;
+    color: var(--text-light);
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+}
+
+#result-artist .card-text{
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+#result-artist img {
+    width: 20vh;
+    border-radius: 8px;
 }

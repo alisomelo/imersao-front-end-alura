@@ -3,11 +3,11 @@
     --font-dm-sans: "DM Sans", sans-serif;
     
     /* COLORS */
---bg-icon: #005B14;
---bg-arrow-color: rgba(0, 57, 0, 0.7);
---bg-search: #52B566;
---text-light: #D8F9DA;
---text-dark: #003900;
---bg-entrar-color: #93F6A2;
---bg-cards-color: #005B14;
+    --bg-icon: #005B14;
+    --bg-arrow-color: rgba(0, 57, 0, 0.7);
+    --bg-search: #52B566;
+    --text-light: #D8F9DA;
+    --text-dark: #003900;
+    --bg-entrar-color: #93F6A2;
+    --bg-cards-color: #005B14;
 }

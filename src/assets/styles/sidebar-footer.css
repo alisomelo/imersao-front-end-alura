@@ -65,6 +65,7 @@ h1 {
     font-size:14px;
     margin-top: 10px;
     height: calc(100vh - 314px);
+    overflow-y: hidden;
 }
 
 .library .library__content {
